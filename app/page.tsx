@@ -1,11 +1,18 @@
+"use client";
+
 import BlurredCircle from "@/components/BlurredCircle";
+import Intro from "@/components/Intro";
+import Container from "../components/UI/Container";
+import About from "@/components/About";
 
 export default function Home() {
   return (
-    <>
-      <div className="min-h-screen p-5 mt-[100px] flex flex-col ">
+    <Container>
+      <div className="min-h-screen flex flex-col mt-[120px] ">
         <BlurredCircle />
+        <Intro />
+        <About />
       </div>
-    </>
+    </Container>
   );
 }

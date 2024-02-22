@@ -6,4 +6,19 @@ html,
 body,
 :root {
   height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #020713;
+  color: white;
+}
+
+border {
+  border: 1px solid salmon;
+}
+
+.circle {
+  height: 1000px;
+  width: 1000px;
+  background-image: radial-gradient(closest-side, rgba(255, 230, 0)), #000;
 }

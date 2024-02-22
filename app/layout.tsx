@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const font = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shubham Kumar",
-  description: "Shubham Kumar's Portfolio - 2024 ",
+  title: "Shubham Kumar | Portfolio",
+  description: "Shubham Kumar's Portfolio - 2024",
 };
 
 export default function RootLayout({
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

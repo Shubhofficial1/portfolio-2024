@@ -5,10 +5,17 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const ProjectGrid = () => {
   return (
     <>
-      <div className="w-full text-center my-[100px]">
+      <div className="w-full mt-[100px]  mb-[80px] ">
         <h1 className="font-bold text-[2rem] tracking-wide capitalize">
-          Projects
+          What I've Been Working On 💼
         </h1>
+        <p className="font-semibold text-l  g  text-slate-500 capitalize my-4  line-clamp-2 max-w-[900px]">
+          I like to stay busy and always have a project in the works. Take a
+          look at some of the applications and bootathon I've dedicated my time
+          to. I like to stay busy and always have a project in the works. Take a
+          look at some of the applications and bootathon I've dedicated my time
+          to.
+        </p>
       </div>
 
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 ">
@@ -18,12 +25,12 @@ const ProjectGrid = () => {
             className="flex flex-col justify-start transition cursor-pointer  hover:scale-[1.01]  "
           >
             <div className="relative w-full h-[300px] rounded-lg bg-slate-500  ">
-              <Image
+              {/* <Image
                 src={project.primaryImage}
                 fill={true}
                 alt={project.title}
                 className="overflow-hidden object-cover rounded-lg"
-              />
+              /> */}
             </div>
             <h1 className="font-bold text-md capitalize mt-5 ">
               {project.title}

@@ -7,18 +7,22 @@ import About from "@/components/About";
 import WorkGrid from "@/components/WorkGrid";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <Container>
-      <div className="min-h-screen flex flex-col mt-[120px] ">
-        <BlurredCircle />
-        <Intro />
-        <About />
-        <WorkGrid />
-        <Skills />
-        <Experience />
-      </div>
-    </Container>
+    <>
+      <Header />
+      <Container>
+        <div className="min-h-screen flex flex-col mt-[120px] ">
+          <BlurredCircle />
+          <Intro />
+          <About />
+          <WorkGrid />
+          <Skills />
+          <Experience />
+        </div>
+      </Container>
+    </>
   );
 }

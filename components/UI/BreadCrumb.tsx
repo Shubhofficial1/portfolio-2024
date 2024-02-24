@@ -15,7 +15,7 @@ const BreadCrumb: React.FC<BreadCrumbProps> = ({ paths }) => {
     <nav className="flex text-base">
       {paths &&
         paths?.map((path, index) => (
-          <span key={index} className="">
+          <span key={index}>
             {index < paths.length - 1 ? (
               <div className="flex items-center">
                 <Link

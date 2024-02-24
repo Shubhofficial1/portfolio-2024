@@ -26,7 +26,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ params }) => {
   }
 
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[50px]">
       <Container>
         <ProjectHeading project={project[0]} />
         <ProjectDetailsActions project={project[0]} />

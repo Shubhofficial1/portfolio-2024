@@ -20,17 +20,17 @@ const BreadCrumb: React.FC<BreadCrumbProps> = ({ paths }) => {
               <div className="flex items-center">
                 <Link
                   href={path?.link}
-                  className="font-semibold text-sm tracking-tight text-textSlateLight hover:underline capitalize"
+                  className="font-semibold text-sm tracking-tight text-slate-400 hover:underline capitalize"
                 >
                   {path?.label}
                 </Link>
-                <span className="mx-2 font-semibold text-sm tracking-tight text-textSlate capitalize">
+                <span className="mx-2 font-semibold text-sm tracking-tight text-slate-400 capitalize">
                   /
                 </span>
               </div>
             ) : (
               <div className="flex items-center">
-                <span className="font-semibold text-sm tracking-tight text-textSlateLight/[0.6] capitalize">
+                <span className="font-semibold text-sm tracking-tight text-slate-500 capitalize">
                   {path?.label}
                 </span>
               </div>

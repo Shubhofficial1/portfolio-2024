@@ -6,6 +6,7 @@ import Container from "../components/UI/Container";
 import About from "@/components/About";
 import WorkGrid from "@/components/WorkGrid";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <WorkGrid />
         <Skills />
+        <Experience />
       </div>
     </Container>
   );

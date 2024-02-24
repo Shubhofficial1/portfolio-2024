@@ -16,39 +16,38 @@ const Experience = () => {
       </div>
       <div className="w-full ">
         {experiences.map((experience) => (
-          <>
-            <div className="max-w-xl bg-white shadow-md rounded-md overflow-hidden my-8">
-              {/* Company Details */}
-              <div className="p-4 bg-gradient-to-l from-indigo-400 to-indigo-500">
-                <h2 className="text-xl font-bold">{experience.company}</h2>
-                <p className="text-sm ">
-                  {experience.joinedOn.format("MMMM YYYY")} -{" "}
-                  {experience.currentlyWorking
-                    ? "Present"
-                    : experience?.leftOn?.format("MMMM YYYY")}
-                </p>
-                <p className="text-sm">{experience.workLocation}</p>
-              </div>
-              {/* Project Details */}
-              <div className="px-4 py-2 ">
-                {experience.projects.map((project, index) => (
-                  <div key={index} className="mb-5 ">
-                    <h3 className="text-lg font-semibold text-gray-800 ">
-                      {project.projectName}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {project.startedOn.format("MMM YYYY")} -{" "}
-                      {project.completedOn
-                        ? project.completedOn.format("MMM YYYY")
-                        : "Present"}{" "}
-                    </p>
-                    <p className="text-sm text-gray-600">{project.role}</p>
-                    <p className="text-sm text-gray-600">{project.location}</p>
-                  </div>
-                ))}
-              </div>
+          <div
+            key={experience.company}
+            className="max-w-xl bg-white shadow-md rounded-md overflow-hidden my-8"
+          >
+            <div className="p-4 bg-gradient-to-l from-indigo-400 to-indigo-500">
+              <h2 className="text-xl font-bold">{experience.company}</h2>
+              <p className="text-sm ">
+                {experience.joinedOn.format("MMMM YYYY")} -{" "}
+                {experience.currentlyWorking
+                  ? "Present"
+                  : experience?.leftOn?.format("MMMM YYYY")}
+              </p>
+              <p className="text-sm">{experience.workLocation}</p>
             </div>
-          </>
+            <div className="px-4 py-2 ">
+              {experience.projects.map((project, index) => (
+                <div key={index} className="mb-5 ">
+                  <h3 className="text-lg font-semibold text-gray-800 ">
+                    {project.projectName}
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    {project.startedOn.format("MMM YYYY")} -{" "}
+                    {project.completedOn
+                      ? project.completedOn.format("MMM YYYY")
+                      : "Present"}{" "}
+                  </p>
+                  <p className="text-sm text-gray-600">{project.role}</p>
+                  <p className="text-sm text-gray-600">{project.location}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </>

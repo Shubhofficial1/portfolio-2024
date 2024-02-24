@@ -19,7 +19,7 @@ const Experience = () => {
           <>
             <div className="max-w-xl bg-white shadow-md rounded-md overflow-hidden my-8">
               {/* Company Details */}
-              <div className="px-4 py-2 bg-gradient-to-l from-indigo-400 to-indigo-500">
+              <div className="p-4 bg-gradient-to-l from-indigo-400 to-indigo-500">
                 <h2 className="text-xl font-bold">{experience.company}</h2>
                 <p className="text-sm ">
                   {experience.joinedOn.format("MMMM YYYY")} -{" "}

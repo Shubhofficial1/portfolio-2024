@@ -2,14 +2,14 @@ import moment from "moment";
 
 export const experiences = [
   {
-    company: "TCS",
-    joinedOn: moment("2018-01-01"),
+    company: "Tata Consultancy Services (TCS)",
+    joinedOn: moment("2023-01-04"),
     currentlyWorking: true,
     workLocation: "New Delhi, India",
     projects: [
       {
         projectName: "Johnson & Johnson ( J&J ) Project",
-        startedOn: moment("2018-02-01"),
+        startedOn: moment("2023-09-10"),
         completedOn: null,
         location: "New Delhi",
         role: "Software Analyst",
@@ -17,7 +17,7 @@ export const experiences = [
       {
         projectName: "Ingram Micro",
         startedOn: moment("2023-01-16"),
-        completedOn: moment("2019-09-01"),
+        completedOn: moment("2023-08-14"),
         location: "New Delhi ",
         role: "Software Analyst",
       },

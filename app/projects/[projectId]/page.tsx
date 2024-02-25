@@ -1,5 +1,6 @@
 "use client";
 
+import BlurredCircle1 from "@/components/BlurredCircle1";
 import ProjectDetailsActions from "@/components/ProjectDetailsActions";
 import ProjectHeading from "@/components/ProjectHeading";
 import ProjectLessons from "@/components/ProjectLessons";
@@ -28,6 +29,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ params }) => {
   return (
     <div className="mt-[50px]">
       <Container>
+        <BlurredCircle1/>
         <ProjectHeading project={project[0]} />
         <ProjectDetailsActions project={project[0]} />
         <ProjectLessons project={project[0]} />

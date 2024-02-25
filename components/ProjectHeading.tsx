@@ -33,10 +33,10 @@ const ProjectHeading: React.FC<ProjectHeadingProps> = ({ project }) => {
   return (
     <>
       <BreadCrumb paths={breadcrumbPaths} />
-      <h1 className="font-bold text-4xl mt-10 mb-5 tracking-wide">
+      <h1 className="font-bold text-4xl mt-10 mb-5 tracking-wide z-10">
         {project?.title}
       </h1>
-      <p className="font-medium text-md my-4 max-w-[700px] text-slate-500 line-clamp-4">
+      <p className="font-medium text-md my-4 max-w-[700px] text-slate-500 line-clamp-4 z-10">
         {project?.description}
       </p>
     </>

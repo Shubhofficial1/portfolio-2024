@@ -14,7 +14,7 @@ const WorkGrid = () => {
         <h1 className="font-bold text-[2rem] tracking-wide capitalize">
           What I've Been Working On 💼
         </h1>
-        <p className="font-semibold text-l  g  text-slate-500 capitalize my-4  line-clamp-2 max-w-[900px]">
+        <p className="font-bold text-md  text-slate-500 capitalize my-4  line-clamp-2 max-w-[900px]">
           I like to stay busy and always have a project in the works. Take a
           look at some of the applications and bootathon I've dedicated my time
           to. I like to stay busy and always have a project in the works. Take a

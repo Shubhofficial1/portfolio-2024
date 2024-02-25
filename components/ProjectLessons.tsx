@@ -35,7 +35,7 @@ const ProjectLessons: React.FC<ProjectLessonsProps> = ({ project }) => {
             <h1 className="font-bold text-3xl text-slate-500 mb-5 line-clamp-2">
               {project.lessons[index].title}
             </h1>
-            <p className="font-semibold text-sm text-slate-500 leading-6 tracking-normal capitalize ">
+            <p className="font-semibold text-md  text-slate-500 leading-8 capitalize">
               {project.lessons[index].description}
             </p>
           </div>

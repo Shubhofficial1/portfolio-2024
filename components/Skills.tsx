@@ -7,7 +7,7 @@ const Skills = () => {
         <h1 className="font-bold text-[2rem] tracking-wide capitalize">
           Skills ⭐
         </h1>
-        <p className="font-semibold text-l  g  text-slate-500 capitalize my-4  line-clamp-2 max-w-[900px]">
+        <p className="font-bold text-md  text-slate-500 capitalize my-4  line-clamp-2 max-w-[900px]">
           Through my studies, I've gained a solid understanding of computer
           science and web development concepts, and have dedicated a lot of my
           free time to apply these concepts to real-world scenarios and

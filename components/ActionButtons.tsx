@@ -4,7 +4,7 @@ import Button from "./UI/Button";
 
 const ActionButtons = () => {
   return (
-    <div className="w-full mt-[10px] flex flex-col items-center md:justify-center md:flex-row  gap-5">
+    <div className="w-full mt-[10px] flex flex-col items-center md:justify-center md:flex-row gap-5">
       <Button>
         <h1 className="text-white text-lg font-bold tracking-tight">
           Contact Me

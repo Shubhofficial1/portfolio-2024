@@ -10,7 +10,7 @@ interface NavLink {
 const Header = () => {
   return (
     <div className="w-full hidden fixed z-50 top-6 items-center justify-center md:flex">
-      <div className="backdrop-blur bg-white/5 px-3 py-2 flex gap-3 rounded-full shadow ">
+      <div className="backdrop-blur bg-white/5 px-3 py-2 flex gap-3 rounded-full shadow">
         {navLinks?.map((navLink: NavLink) => (
           <div
             key={navLink.label}
